@@ -11,7 +11,7 @@ GEN_CMDS__FLAG := -l"configPkg/linker.cmd"
 
 ORDERED_OBJS += \
 "./EK_TM4C123GXL.obj" \
-"./empty.obj" \
+"./main.obj" \
 "./uartstdio.obj" \
 "../EK_TM4C123GXL.cmd" \
 $(GEN_CMDS__FLAG) \
@@ -159,8 +159,8 @@ SelfBalancingRobot.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "EK_TM4C123GXL.obj" "empty.obj" "uartstdio.obj" 
-	-$(RM) "EK_TM4C123GXL.d" "empty.d" "uartstdio.d" 
+	-$(RM) "EK_TM4C123GXL.obj" "main.obj" "uartstdio.obj" 
+	-$(RM) "EK_TM4C123GXL.d" "main.d" "uartstdio.d" 
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-@echo 'Finished clean'
 	-@echo ' '

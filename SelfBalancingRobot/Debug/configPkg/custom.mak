@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/empty_pem4f.xdl
-	$(SED) 's"^\"\(package/cfg/empty_pem4fcfg.cmd\)\"$""\"C:/Users/Zachary/Desktop/SelfBalancingRobotWorkspace/SelfBalancingRobot/Debug/configPkg/\1\""' package/cfg/empty_pem4f.xdl > $@
+	$(SED) 's"^\"\(package/cfg/empty_pem4fcfg.cmd\)\"$""\"C:/Users/Zachary/Desktop/SelfBalancingRobotWorkspace/Self_Balancing_Robot/SelfBalancingRobot/Debug/configPkg/\1\""' package/cfg/empty_pem4f.xdl > $@
 	-$(SETDATE) -r:max package/cfg/empty_pem4f.h compiler.opt compiler.opt.defs

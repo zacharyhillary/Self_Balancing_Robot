@@ -13,7 +13,7 @@ CMD_SRCS += \
 
 C_SRCS += \
 ../EK_TM4C123GXL.c \
-../empty.c \
+../main.c \
 ../uartstdio.c 
 
 GEN_CMDS += \
@@ -28,7 +28,7 @@ GEN_MISC_DIRS += \
 
 C_DEPS += \
 ./EK_TM4C123GXL.d \
-./empty.d \
+./main.d \
 ./uartstdio.d 
 
 GEN_OPTS += \
@@ -36,7 +36,7 @@ GEN_OPTS += \
 
 OBJS += \
 ./EK_TM4C123GXL.obj \
-./empty.obj \
+./main.obj \
 ./uartstdio.obj 
 
 GEN_MISC_DIRS__QUOTED += \
@@ -44,12 +44,12 @@ GEN_MISC_DIRS__QUOTED += \
 
 OBJS__QUOTED += \
 "EK_TM4C123GXL.obj" \
-"empty.obj" \
+"main.obj" \
 "uartstdio.obj" 
 
 C_DEPS__QUOTED += \
 "EK_TM4C123GXL.d" \
-"empty.d" \
+"main.d" \
 "uartstdio.d" 
 
 GEN_FILES__QUOTED += \
@@ -58,7 +58,7 @@ GEN_FILES__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../EK_TM4C123GXL.c" \
-"../empty.c" \
+"../main.c" \
 "../uartstdio.c" 
 
 
